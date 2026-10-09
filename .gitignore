@@ -1,0 +1,30 @@
+# Curatal WorkHub Root .gitignore
+
+# Environment and Secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+
+# Database and Backup Dumps
+backups/
+*.dump
+*.sql
+*.tar.gz
+
+# Runtime logs
+logs/
+*.log
+
+# Sub-repositories local artifacts
+curatal-workhub-infra/.env
+curatal-workhub-infra/.env.*
+!curatal-workhub-infra/.env.example
+
+# Temporary and OS files
+tmp/
+temp/
+.DS_Store
+Thumbs.db
